@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CSS-Flex Documentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Cascading Style Sheets - Flex</header>
+      <a class="nav-link" href="#Flex_Direction">Flex Direction</a>
+      <a class="nav-link" href="#Flex_Wrap">Flex Wrap</a>
+      <a class="nav-link" href="#Justify_Content">Justify Content</a>
+      <a class="nav-link" href="#Align_Items">Align Items</a>
+      <a class="nav-link" href="#Gap">Gap</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Flex_Direction">
+        <header>Flex Direction</header>
+        <p>The <code>flex-direction</code> property determines the direction in which the flex container's items are placed in the flex container.</p>
+    <p>By default, it is set to <code>row</code>, which means items are placed from left to right.</p>
+    <ul>
+      <li><code>row</code>: Places items in a horizontal row (default).</li>
+      <li><code>row-reverse</code>: Places items in a horizontal row but in reverse order.</li>
+      <li><code>column</code>: Places items in a vertical column from top to bottom.</li>
+      <li><code>column-reverse</code>: Places items in a vertical column but in reverse order.</li>
+    </ul>
+    <code class="code">
+    .container { 
+      display: flex; 
+      flex-direction: row; 
+    }
+    </code>
+      </section>
+      <section class="main-section" id="Flex_Wrap">
+        <header>Flex Wrap</header>
+        <p>The <code>flex-wrap</code> property controls whether the flex items should wrap onto multiple lines.</p>
+    <p>By default, items are placed in a single line and will overflow if necessary.</p>
+    <ul>
+      <li><code>nowrap</code>: All items are placed in one line (default).</li>
+      <li><code>wrap</code>: Items wrap onto the next line when necessary.</li>
+    </ul>
+    <code class="code">
+    .container { 
+      display: flex; 
+      flex-wrap: wrap; 
+    }
+    </code>
+      </section>
+      <section class="main-section" id="Justify_Content">
+        <header>Justify Content</header>
+        <p>The <code>justify-content</code> property aligns flex items along the main axis (horizontal by default).</p>
+    <p>It is used to distribute extra space between items or align items within the container.</p>
+    <code class="code">
+    .container { 
+      display: flex; 
+      justify-content: space-between; 
+    }
+    </code>
+      </section>
+      <section class="main-section" id="Align_Items">
+        <header>Align Items</header>
+        <p>The <code>align-items</code> property aligns flex items along the cross axis (vertical by default).</p>
+    <p>This property is useful for setting the vertical alignment of items within the container.</p>
+    <code class="code">
+    .container { 
+      display: flex; 
+      align-items: center; 
+    }
+    </code>
+      </section>
+      <section class="main-section" id="Gap">
+        <header>Gap</header>
+        <p>The <code>gap</code> property defines the spacing between flex items. It can be used to create consistent spacing in a flex container.</p>
+    <p>You can also specify <code>row-gap</code> and <code>column-gap</code> for more granular control.</p>
+    <ul>
+      <li><code>gap</code>: Sets the spacing between rows and columns.</li>
+      <li><code>row-gap</code>: Sets the spacing between rows only.</li>
+      <li><code>column-gap</code>: Sets the spacing between columns only.</li>
+    </ul>
+    <code class="code">
+    .container { 
+      display: flex; 
+      gap: 10px; 
+    }
+    </code>
+      </section>
+    </main>
+  </body>
+</html>
